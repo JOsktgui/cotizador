@@ -1,0 +1,17 @@
+.container-input {
+  margin: 16px 0;
+
+  input {
+    width: 100%;
+    border: 1px solid #C5CBE0;
+    border-radius: 4px;
+    height: 56px;
+    outline: none;
+    font-size: 16px;
+    padding: 0 16px;
+
+    &::placeholder {
+      color: #A3ABCC;
+    }
+  }
+}
