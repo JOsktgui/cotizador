@@ -1,0 +1,55 @@
+/*@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";*/
+
+.container-plans {
+  &__info {
+    padding: 0 32px;
+  }
+
+  &__footer {
+    text-align: center;
+    width: 100%;
+
+    span {
+      font-size: 12px;
+      color: #939DFF;
+      cursor: pointer;
+      margin-bottom: 48px;
+      display: inline-block;
+    }
+
+    &-button {
+      padding: 12px 32px;
+      box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__body {
+      margin: 0 auto 122px;
+      max-width: 480px;
+    }
+
+    &__info {
+      padding: 0;
+    }
+
+    &__footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+
+      span {
+        margin-bottom: 0;
+        margin-right: 40px;
+      }
+
+      &-button {
+        min-width: 184px;
+        padding: 0;
+        box-shadow: none;
+      }
+    }
+  }
+}

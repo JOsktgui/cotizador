@@ -1,8 +1,12 @@
 import React from 'react';
-import { SelectInput, Input, Checkbox, Button } from 'components';
+import { useHistory } from 'react-router-dom';
+import { SelectInput, Input, Checkbox, Button, DatePicker } from 'components';
+
 import './styles.scss';
 
 const FormHome = () => {
+  const history = useHistory();
+
   return (
     <div className='container-form-home'>
       <div className='container-form-home__title'>
@@ -13,7 +17,7 @@ const FormHome = () => {
 
       <div className='container-form-home__form'>
         <SelectInput />
-        <Input placeholder='Fecha de nacimiento' />
+        <DatePicker placeholder='Fecha de nacimiento' />
         <Input type='number' placeholder='Celular' />
         <Checkbox id='accept-policies'>
           Acepto la Política de Protección de Datos Personales y los Términos y Condiciones.
@@ -23,10 +27,9 @@ const FormHome = () => {
         </Checkbox>
       </div>
 
-      <Button>
+      <Button onClick={() => history.push('/agregar-parientes')}>
         COMENCEMOS
       </Button>
-      {/*6868*/}
     </div>
   );
 };

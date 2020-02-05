@@ -1,0 +1,35 @@
+@import 'styles/color-palette';
+
+.container-sidebar {
+  width: 100%;
+  background-color: $primary-color;
+  background-image: url('../../images/base-light.svg');
+  position: relative;
+
+  .header {
+    height: 56px;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #FC4E55;
+  }
+
+  > img {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-color: transparent;
+    width: 376px;
+    min-width: 376px;
+    height: 768px;
+
+    > img {
+      display: flex;
+      position: absolute;
+      top: 120px;
+      right: -100px;
+    }
+  }
+}

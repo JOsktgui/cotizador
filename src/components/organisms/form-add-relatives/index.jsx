@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import chevrotRightSvg from 'images/chevrot-right.svg';
-
+import { useHistory } from 'react-router-dom'
 import { SelectInput, Input, FamilyData, RadioGroup, Button } from 'components';
+
+import chevrotRightSvg from 'images/chevrot-right.svg';
 
 import './styles.scss';
 
@@ -17,6 +18,7 @@ const ensure = [
 
 const FormAddRelatives = () => {
   const [addFamily, setAddFamily] = useState(false);
+  const history = useHistory();
 
   return (
     <div className='form-add-relatives'>
@@ -41,7 +43,7 @@ const FormAddRelatives = () => {
 
       <div className='form-add-relatives__footer'>
         <div>
-          <Button disabled>
+          <Button onClick={() => history.push('/planes')}>
             CONTINUAR <img src={chevrotRightSvg} alt='chevrot'/>
           </Button>
         </div>

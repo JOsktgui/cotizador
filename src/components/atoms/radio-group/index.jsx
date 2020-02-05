@@ -28,21 +28,6 @@ const RadioGroup = ({ title, data, onChange }) => {
             </div>
           )
         }) }
-        {/*<div className='container-radio-group__item'>
-          <input type='radio' name='fruit' value='apple' id='apple' />
-          <label className='container-radio-group__label' htmlFor='apple'>
-            <span />
-            Apple
-          </label>
-        </div>
-
-        <div className='container-radio-group__item'>
-          <input type='radio' name='fruit' value='orange' id='orange' />
-          <label className='container-radio-group__label' htmlFor='orange'>
-            <span />
-            Orange
-          </label>
-        </div>*/}
       </form>
     </div>
   );

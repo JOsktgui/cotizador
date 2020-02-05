@@ -1,0 +1,60 @@
+@import 'styles/color-palette';
+
+.container-thanks {
+  &__body {
+    margin: 0 auto;
+    max-width: 556px;
+    padding: 40px 32px;
+    font-weight: 300;
+
+    &-header {
+      font-size: 28px;
+      margin-bottom: 16px;
+
+      span {
+        color: $primary-color;
+      }
+    }
+
+    p {
+      color: #676F8F;
+      line-height: 24px;
+      margin-bottom: 48px;
+
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    &__body {
+      margin: 148px 60px 0;
+
+      &-person {
+        border-bottom: 1px solid #EDEFF5;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 24px;
+      }
+
+      &-header {
+        font-size: 40px;
+      }
+
+      &-footer {
+        width: 200px;
+        margin-left: auto;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    &__body {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}

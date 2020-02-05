@@ -1,0 +1,37 @@
+@import 'styles/color-palette';
+
+.container-services-exclusions {
+  margin: 48px 0;
+
+  &__header {
+    color: #494F66;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 300;
+    border-bottom: 1px solid #E4E8F7;
+
+    div {
+      margin-top: 8px;
+    }
+
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &__item {
+    color: #676F8F;
+    border-bottom: 1px solid #E4E8F7;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
+}
