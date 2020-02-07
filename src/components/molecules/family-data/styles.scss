@@ -14,18 +14,41 @@
     align-items: center;
     color: #939DFF;
 
-    .container-select-input {
-      margin: 0;
+    &-document {
+      width: 100%;
+      display: flex;
+
+      .container-select {
+        select {
+          min-width: 110px;
+        }
+      }
+
+      .container-input {
+        margin: 0;
+
+        input {
+          border-radius: 0 4px 4px 0;
+        }
+      }
     }
 
-    span, img {
+    &-add {
       margin-left: 24px;
       cursor: pointer;
-      font-size: 12px;
-    }
 
-    span {
-      display: none;
+      &.disabled {
+        cursor: not-allowed;
+      }
+
+      span, img {
+        font-size: 12px;
+        user-select: none;
+      }
+
+      span {
+        display: none;
+      }
     }
   }
 
@@ -41,7 +64,7 @@
       display: flex;
       align-items: center;
 
-      > div {
+      > div:first-child {
         border-bottom: 1px solid #EDEFF5;
         padding: 16px;
         width: 100%;
@@ -49,15 +72,19 @@
 
         span {
           &:first-child {
+            min-width: 72px;
             margin-right: 72px;
           }
         }
       }
+    }
+
+    &-remove {
+      margin-left: 24px;
+      cursor: pointer;
 
       > img, > span {
         font-size: 12px;
-        margin-left: 24px;
-        cursor: pointer;
       }
 
       > span {

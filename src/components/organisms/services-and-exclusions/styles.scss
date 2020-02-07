@@ -28,6 +28,12 @@
       display: flex;
       justify-content: space-between;
       padding: 24px 0;
+      cursor: pointer;
+    }
+
+    &-body {
+      padding-bottom: 24px;
+      font-size: 14px;
     }
   }
 

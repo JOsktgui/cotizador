@@ -33,7 +33,7 @@ const PlanSummary = () => {
               </div>
             </div>
             <div className='container-plan-summary__body-item'>
-              <span>Cónyugue</span>
+              <span>Hijo</span>
               <div>
                 <span>S/</span>
                 40

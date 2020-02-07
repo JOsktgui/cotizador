@@ -2,7 +2,7 @@ import React from 'react';
 import { map } from 'lodash';
 import './styles.scss';
 
-const RadioGroup = ({ title, data, onChange }) => {
+const RadioGroup = ({ title, data, onChange, value }) => {
 
   return (
     <div className='container-radio-group'>
@@ -18,8 +18,9 @@ const RadioGroup = ({ title, data, onChange }) => {
                 onChange={({ target }) => onChange(target.value)}
                 type='radio'
                 name={title}
-                value={id}
+                checked={id === value}
                 id={id}
+                value={id}
               />
               <label className='container-radio-group__label' htmlFor={id}>
                 <span />

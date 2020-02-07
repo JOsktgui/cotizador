@@ -6,7 +6,8 @@ import {
   Home,
   AddRelatives,
   Plans,
-  Thanks
+  Thanks,
+  Testing
 } from 'pages';
 
 const Routes = () => {
@@ -16,6 +17,7 @@ const Routes = () => {
       <Route exact path='/agregar-parientes' component={AddRelatives} />
       <Route exact path='/planes' component={Plans} />
       <Route exact path='/gracias' component={Thanks} />
+      <Route exact path='/testing' component={Testing} />
       <Redirect to='/' />
     </Switch>
   )

@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import {
   Button,
   SidebarShared,
   SubHeader,
-  CarouselPlans,
+  PlanList,
   PlanSummary,
   PlanCard,
   ServicesAndExclusions
@@ -15,6 +15,7 @@ import './styles.scss';
 
 const Plans = () => {
   const history = useHistory();
+  const [planSelected, setPlanSelected] = useState(0);
 
   return (
     <SidebarShared>
@@ -26,8 +27,12 @@ const Plans = () => {
         />
 
         <div className='container-plans__info'>
+          <PlanList
+            planSelected={planSelected}
+            onChange={plan => setPlanSelected(plan)}
+          />
           <PlanSummary />
-          <PlanCard />
+          <PlanCard planSelected={planSelected} />
           <ServicesAndExclusions />
         </div>
 

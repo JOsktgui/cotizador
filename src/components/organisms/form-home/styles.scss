@@ -13,7 +13,7 @@
     }
   }
 
-  p {
+  > p {
     font-weight: 300;
     color: #676F8F;
     font-size: 16px;
@@ -22,6 +22,19 @@
   &__form {
     margin-top: 24px;
     margin-bottom: 40px;
+
+    &-document {
+      display: flex;
+      margin: 16px 0;
+
+      .container-input {
+        margin: 0;
+
+        input {
+          border-radius: 0 4px 4px 0;
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 992px) {

@@ -32,12 +32,18 @@
         border-radius: 20px;
         color: #FFF;
         font-size: 10px;
-        width: 57px;
+        width: max-content;
         height: 20px;
+        padding: 0 8px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 24px;
+
+        span {
+          display: none;
+          margin-right: 4px;
+        }
       }
 
       .image {
@@ -100,6 +106,14 @@
   @media screen and (min-width: 768px) {
     &__body {
       padding: 40px;
+
+      &-header {
+        .tag {
+          span {
+            display: block;
+          }
+        }
+      }
     }
   }
 
