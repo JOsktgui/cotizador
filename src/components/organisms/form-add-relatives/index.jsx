@@ -54,11 +54,11 @@ const FormAddRelatives = props => {
 
   function buttonIsDisabled() {
 
+    if ('me-and-family' === values.ensure && isEmpty(values.family)) return false;
+
     if (includes(search, 'fetch=false')) {
       return values.names;
     }
-
-    if ('me-and-family' === values.ensure && isEmpty(values.family)) return false;
 
     return values.number_document &&
       values.names &&
